@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ytJ-H9-tPz" customClass="SMSLoginView" customModule="UUEnglish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="560"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nco-Ss-F6N">
+                    <rect key="frame" x="17" y="60" width="416" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+86" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-gQ-dP0">
+                            <rect key="frame" x="20" y="11" width="49" height="38"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="27"/>
+                            <color key="textColor" red="0.1333333333" green="0.14117647059999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LW-OD-YGU">
+                            <rect key="frame" x="85" y="12" width="2" height="36"/>
+                            <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="TAF-nd-g9m"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IB0-Bg-15w">
+                            <rect key="frame" x="99" y="8" width="305" height="44"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9LW-OD-YGU" secondAttribute="bottom" constant="12" id="0Le-Le-KcX"/>
+                        <constraint firstItem="9LW-OD-YGU" firstAttribute="top" secondItem="nco-Ss-F6N" secondAttribute="top" constant="12" id="Dec-Wp-Wk1"/>
+                        <constraint firstItem="gkw-gQ-dP0" firstAttribute="leading" secondItem="nco-Ss-F6N" secondAttribute="leading" constant="20" id="GR4-CP-5cW"/>
+                        <constraint firstItem="IB0-Bg-15w" firstAttribute="top" secondItem="nco-Ss-F6N" secondAttribute="top" constant="8" id="MwH-rn-fxO"/>
+                        <constraint firstItem="IB0-Bg-15w" firstAttribute="leading" secondItem="9LW-OD-YGU" secondAttribute="trailing" constant="12" id="NLP-tG-gS4"/>
+                        <constraint firstItem="gkw-gQ-dP0" firstAttribute="centerY" secondItem="nco-Ss-F6N" secondAttribute="centerY" id="ULp-AA-WZf"/>
+                        <constraint firstAttribute="height" constant="60" id="WCK-Oi-ce8"/>
+                        <constraint firstItem="9LW-OD-YGU" firstAttribute="leading" secondItem="gkw-gQ-dP0" secondAttribute="trailing" constant="16" id="Xbu-SK-MM6"/>
+                        <constraint firstAttribute="bottom" secondItem="IB0-Bg-15w" secondAttribute="bottom" constant="8" id="pB1-RJ-qVf"/>
+                        <constraint firstAttribute="trailing" secondItem="IB0-Bg-15w" secondAttribute="trailing" constant="12" id="wH5-8i-G0k"/>
+                        <constraint firstAttribute="width" constant="416" id="xFp-9b-CPH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRS-MZ-iun">
+                    <rect key="frame" x="17" y="160" width="266" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-uy-hsn">
+                            <rect key="frame" x="12" y="8" width="242" height="44"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LJh-uy-hsn" secondAttribute="bottom" constant="8" id="5vh-2G-LRA"/>
+                        <constraint firstAttribute="width" constant="266" id="8gk-jN-mct"/>
+                        <constraint firstItem="LJh-uy-hsn" firstAttribute="leading" secondItem="NRS-MZ-iun" secondAttribute="leading" constant="12" id="R0h-dg-Jwe"/>
+                        <constraint firstAttribute="height" constant="60" id="ale-EK-cuY"/>
+                        <constraint firstAttribute="trailing" secondItem="LJh-uy-hsn" secondAttribute="trailing" constant="12" id="u9W-m2-Hof"/>
+                        <constraint firstItem="LJh-uy-hsn" firstAttribute="top" secondItem="NRS-MZ-iun" secondAttribute="top" constant="8" id="uyL-w5-0fd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngk-LP-hbL" customClass="LoadingButton" customModule="UUEnglish" customModuleProvider="target">
+                    <rect key="frame" x="104" y="346" width="242" height="80"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="BFM-Zr-vDM"/>
+                        <constraint firstAttribute="width" constant="242" id="tPR-NG-SrP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="36"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vF0-Cw-I4D" customClass="CountDownButton" customModule="UUEnglish" customModuleProvider="target">
+                    <rect key="frame" x="301" y="160" width="120" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0db-Oi-a0j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="30"/>
+                    <state key="normal" title="获取">
+                        <color key="titleColor" red="0.23921568630000001" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新手机号将自动注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONM-Fn-4H6">
+                    <rect key="frame" x="135" y="248" width="180" height="28"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                    <color key="textColor" red="0.36078431372549019" green="0.36470588235294116" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nco-Ss-F6N" firstAttribute="centerX" secondItem="ytJ-H9-tPz" secondAttribute="centerX" id="5eU-Vh-ESK"/>
+                <constraint firstItem="NRS-MZ-iun" firstAttribute="leading" secondItem="nco-Ss-F6N" secondAttribute="leading" id="5zO-iU-3WX"/>
+                <constraint firstItem="ONM-Fn-4H6" firstAttribute="centerX" secondItem="ytJ-H9-tPz" secondAttribute="centerX" id="DYR-tN-Tpk"/>
+                <constraint firstItem="vF0-Cw-I4D" firstAttribute="centerY" secondItem="LJh-uy-hsn" secondAttribute="centerY" id="JfF-km-dE1"/>
+                <constraint firstItem="vF0-Cw-I4D" firstAttribute="trailing" secondItem="IB0-Bg-15w" secondAttribute="trailing" id="Kod-Kw-UQ6"/>
+                <constraint firstItem="Ngk-LP-hbL" firstAttribute="centerX" secondItem="ytJ-H9-tPz" secondAttribute="centerX" id="MVH-dn-4X6"/>
+                <constraint firstItem="NRS-MZ-iun" firstAttribute="top" secondItem="nco-Ss-F6N" secondAttribute="bottom" constant="40" id="QTe-oe-0lb"/>
+                <constraint firstItem="ONM-Fn-4H6" firstAttribute="top" secondItem="NRS-MZ-iun" secondAttribute="bottom" constant="28" id="Rsc-vU-E2r"/>
+                <constraint firstItem="nco-Ss-F6N" firstAttribute="top" secondItem="yeF-2r-oD4" secondAttribute="top" constant="60" id="SgP-pZ-Slg"/>
+                <constraint firstItem="vF0-Cw-I4D" firstAttribute="leading" secondItem="NRS-MZ-iun" secondAttribute="trailing" constant="18" id="TYQ-xj-C9A"/>
+                <constraint firstItem="Ngk-LP-hbL" firstAttribute="top" secondItem="ONM-Fn-4H6" secondAttribute="bottom" constant="70" id="lvD-bE-oxu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yeF-2r-oD4"/>
+            <connections>
+                <outlet property="codeBtn" destination="vF0-Cw-I4D" id="YG2-Rn-WKu"/>
+                <outlet property="codeTf" destination="LJh-uy-hsn" id="jVv-6R-oU0"/>
+                <outlet property="loginBtn" destination="Ngk-LP-hbL" id="qpi-w4-g5y"/>
+                <outlet property="phoneTf" destination="IB0-Bg-15w" id="rnV-97-AUR"/>
+            </connections>
+            <point key="canvasLocation" x="-498" y="197"/>
+        </view>
+    </objects>
+</document>
